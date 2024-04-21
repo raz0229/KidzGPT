@@ -10,9 +10,8 @@ from streamlit_float import float_init
 float_init()
 
 load_dotenv()
-api_key = os.getenv("openai_api_key")
+client = OpenAI(api_key=os.getenv("openai_api_key"))
 
-client = OpenAI(api_key=api_key)
 
 # Utility functions
 
