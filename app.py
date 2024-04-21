@@ -69,7 +69,7 @@ def initialize_session_state():
 
 initialize_session_state()
 
-st.title("OpenAI Conversational Chatbot 🤖")
+st.title("Kidz GPT 🤖")
 
 # Sidebar for API key input
 api_key = st.sidebar.text_input("Enter your OpenAI API Key")
