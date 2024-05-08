@@ -28,8 +28,8 @@ def get_answer(messages, client):
     #system_message = [{"role": "system", "content": "You are an helpful AI chatbot for children, that answers questions asked by small kids between age of 3 to 7 years old. Assist the children's quries in such a way that you can teach something good in entertaining manner. Keep your output response as small as possible so that a 3 to 7 years old can easily understand it."}]
     messages = system_message + messages
     response = client.chat.completions.create(
-        model="gpt-4",
-        # model="gpt-4-0125-preview",
+        # model="gpt-4",
+        model="gpt-4-0125-preview",
         # model="gpt-4-1106-preview",
         messages=messages
     )
